@@ -27,3 +27,8 @@ let name3 = {
 }
 
 name.printFullName.apply(name3, [41, "Gotham"]);
+
+
+// .bind()
+let showName = name.printFullName.bind(name3, 41, "Arkham")
+showName();
